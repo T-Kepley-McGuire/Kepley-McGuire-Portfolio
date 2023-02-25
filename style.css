@@ -1,9 +1,11 @@
+/* BASIC OVERRIDES */   
 * {
     font: inherit;
 	box-sizing : border-box;
     color: inherit;
 }
 
+/* MAIN STYLES */
 main {
     margin : 0;
     padding : 10px;
@@ -11,25 +13,16 @@ main {
 }
 
 main article {
+    font-family: serif;
     margin : 0 30%;
 }
 
-
-header, footer {
-    padding: 20px;
-    background-color: #B2B28F;
-    text-align: center;
+main a {
+    text-decoration: none;
 }
-
-hr {
-    height: 0px;
-    border: 1px solid rgb(56, 56, 56);
-    width : 85%;
-}
-
-main hr {
-    width: 40%
-}
+main a:link { color : #0000EE; }
+main a:visited { color : #551A8B; }
+main a:hover, main a:active { text-decoration: underline; }
 
 h1 {
     font-size: 30px;
@@ -38,6 +31,15 @@ h1 {
 
 h2 {
     font-size: 25px;
+    text-align: center;
+}
+
+
+/* HEADER AND FOOTER STYLES */
+header, footer {
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: #B2B28F;
     text-align: center;
 }
 
@@ -52,12 +54,21 @@ nav a:visited { color : rgb(51, 51, 51); }
 nav a:hover { background-color: #969679; }
 nav a:active { color : #B2B28F; }
 
-main a {
-    text-decoration: none;
+/* I wanted to adjust the footer font size */
+footer, footer nav a {
+    font-size: 12px;
 }
-main a:link { color : #0000EE; }
-main a:visited { color : #551A8B; }
-main a:hover, main a:active { text-decoration: underline; }
+
+/* MISC STYLES (horizontal rules, imgaes, etc.) */
+hr {
+    height: 0px;
+    border: 1px solid rgb(56, 56, 56);
+    width : 85%;
+}
+
+main hr {
+    width: 40%
+}
 
 img {
     display: block;
@@ -66,11 +77,7 @@ img {
 
 }
 
-
-footer, footer nav a {
-    font-size: 12px;
-}
-
+/* this is specifically to center justify the contact list. I used a div class around the ul to accomplish this */
 .inset * {
     list-style: none;
     text-align: center;    
