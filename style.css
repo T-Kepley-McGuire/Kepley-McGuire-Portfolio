@@ -7,14 +7,14 @@
 
 /* MAIN STYLES */
 main {
-    margin : 0;
-    padding : 10px;
-    background-color: #dbcdb1;
+    margin : 0 30%;
 }
 
 main article {
-    font-family: serif;
-    margin : 0 30%;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 350;
+    padding-bottom: 30px;
 }
 
 main a {
@@ -24,23 +24,30 @@ main a:link { color : #0000EE; }
 main a:visited { color : #551A8B; }
 main a:hover, main a:active { text-decoration: underline; }
 
+span {
+    font-size: 25px;
+    background-color: white;
+    padding: 0 10px 0 0;
+}
+
 h1 {
+    font-family: Archivo;
     font-size: 30px;
-    word-spacing: 5px;
 }
 
 h2 {
-    font-size: 25px;
-    text-align: center;
+    text-align: left;
+    height: 20px;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
 }
 
 
 /* HEADER AND FOOTER STYLES */
 header, footer {
-    font-family: sans-serif;
-    padding: 20px;
-    background-color: #B2B28F;
-    text-align: center;
+    margin: 0 30%;
+    font-family: Inter, serif;
+    padding: 20px 0;
 }
 
 nav a {
@@ -51,8 +58,8 @@ nav a {
 
 nav a:link { color : black; }
 nav a:visited { color : rgb(51, 51, 51); }
-nav a:hover { background-color: #969679; }
-nav a:active { color : #B2B28F; }
+nav a:hover { background-color: #969696; }
+nav a:active { background-color : #c9c9c9; }
 
 /* I wanted to adjust the footer font size */
 footer, footer nav a {
@@ -63,18 +70,16 @@ footer, footer nav a {
 hr {
     height: 0px;
     border: 1px solid rgb(56, 56, 56);
-    width : 85%;
 }
 
 main hr {
-    width: 40%
+    width: 100%
 }
 
 img {
     display: block;
     margin: 10px auto;
-    width: 50%;
-
+    width : 100%;
 }
 
 /* this is specifically to center justify the contact list. I used a div class around the ul to accomplish this */
